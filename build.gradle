@@ -23,11 +23,13 @@ test {
 }
 
 dependencies {
+    implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     testCompile("org.junit.jupiter:junit-jupiter-params:$junit_version")
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junit_version"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit_version"
     testImplementation "io.kotlintest:kotlintest-runner-junit5:$kotest_version"
+
 }
 
 compileKotlin {
